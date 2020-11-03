@@ -1,0 +1,11 @@
+print("What is your name human")
+name = input()
+print("How old are you(in years)")
+age = int(input())
+print("How tall are you in meters")
+tall = float(input())
+print("How much do you weigh in kilograms")
+kg = int(input())
+bmi = int(kg/tall**2)
+
+print(name,"you are", age , "years old and your bmi is", bmi)
