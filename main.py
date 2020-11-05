@@ -7,6 +7,7 @@ import basics.repetition.for_loop.simple as simplee
 import basics.repetition.for_loop.count_down as countd
 import basics.repetition.for_loop.characters as characters
 import basics.functions.simple_functions as functions
+import basics.functions.functions_nesting as fnesting
 
 
 print("To which program do you want to run")
@@ -19,7 +20,8 @@ programs=[
   "6. simple.py",
   "7. count_down.py",
   "8. character.py",
-  "9. simple_functions.py"
+  "9. simple_functions.py",
+  "10. functions_nesting.py"
 ]
 print(programs)
 user=int(input())
@@ -41,4 +43,6 @@ elif user == 7:
 elif user == 8:
   characters.run()                                         
 elif user == 9:
-  functions.run()                                               
+  functions.run()  
+elif user == 10:
+  fnesting.run()                                                                                              
