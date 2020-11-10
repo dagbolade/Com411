@@ -6,10 +6,10 @@ def search(location):
   with open(location) as file:
     for line in file:
       if (line.startswith("Sections")):
-        data =line.split(":")
-        sections.append(data[1][:-1])
+        data =line.split(":")[1]
+        sections.append(data.strip())
       else:
-        books.append(data[0][:-1])  
+        books.append(line.strip())  
   print("Done.")
   return(sections,books)
 
