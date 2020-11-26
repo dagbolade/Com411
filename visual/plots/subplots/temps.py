@@ -11,14 +11,23 @@ def read_data(filename):
 
   
 
-def run():
-  data = read_data("visual/plots/subplots/temps.txt")
-  fig, axs = plt.subplots(1, 2)
-  x = range(1,8)
-  y = data
+#def run():
+  #data = read_data("visual/plots/subplots/temps.txt")
+#  fig, axs = plt.subplots(2, 2)
+ # x = range(0,7)
+ # y = data
+ # print(x,y)
   
-  plt.plot(x,y)
-  plt.bar(x,y)
-  plt.show()
-run()  
+ # plt.plot(x,y, 'r')
+ # plt.bar(x,y)
+  #plt.show()
+#run()  
 
+def run():
+  data = read_data('visual/plots/subplots/temps.txt')
+  fig, (ax1, ax2) = plt.subplots(1, 2)
+  ax1.plot(range(len(data)), data)
+  ax2.bar(range(len(data)), data)
+  plt.show()
+
+run()
