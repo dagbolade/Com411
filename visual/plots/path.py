@@ -11,10 +11,12 @@ def path():
     print("Retrieving path...")
     x_values = []
     y_values = []
+    
     for values in range(4):
         data = coordinate()
         x_values.append(data[0])
         y_values.append(data[1])
+        print(x_values,y_values)
     return [x_values, y_values]
 def run():
     values = path()
